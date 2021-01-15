@@ -1,0 +1,29 @@
+h1 {
+    font-family: "Oswald";
+    text-align: center;
+    color: white;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: "Oswald";
+    color: white;
+}
+body {
+    font-family: "Open Sans";
+    background-color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:darkslategray;
+}
+
+.navbar a {
+    font-family: "Oswald";
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
