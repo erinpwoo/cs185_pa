@@ -25,5 +25,14 @@ body {
     padding: 10px;
 }
 
+.main-text {
+    color: white;
+    text-align: center;
+}
+.spotify {
+    text-align: center;
+    padding: 20px;
+}
+
 
 
