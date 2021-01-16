@@ -54,7 +54,7 @@ body {
     padding: 10px;
 }
 
-video {
+.column video {
     margin-top: 8px;
     vertical-align: middle;
     width:25%;
