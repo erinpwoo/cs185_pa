@@ -11,6 +11,7 @@ h2,h3,h4,h5,h6 {
 body {
     font-family: "Open Sans";
     background-color: black;
+    width: 100%;
 }
 
 .navbar {
