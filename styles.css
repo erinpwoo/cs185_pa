@@ -17,6 +17,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color:darkslategray;
+    max-width: 100%;
 }
 
 .navbar a {
@@ -40,24 +41,25 @@ body {
     padding: 0 4px;
     text-align: center;
 }
-  
-  /* Create two equal columns that sits next to each other */
-.column {
-    padding: 10px;
+
+.content-body {
+    vertical-align: middle;
 }
-  
-.column img {
+
+img {
     margin-top: 8px;
     vertical-align: middle;
-    width:15%;
+    width:250px;
     padding: 10px;
 }
 
-.column video {
+video {
     margin-top: 8px;
     vertical-align: middle;
-    width:25%;
     padding: 10px;
+    width: 400px;
+    max-width: 80%;
+    flex-direction: row;
 }
 
 th, td {
@@ -69,7 +71,7 @@ th, td {
 
 table {
     border: 1px solid ivory;
-    width: fit-content;
+    width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
