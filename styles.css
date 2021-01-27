@@ -25,6 +25,12 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: inline-block;
+    width: inherit;
+}
+
+.navbar a:hover {
+    background-color: teal;
 }
 
 .main-text {
@@ -46,14 +52,23 @@ body {
     vertical-align: middle;
 }
 
-img {
+.active {
+    background-color: cadetblue;
+}
+
+.row img {
     margin-top: 8px;
     vertical-align: middle;
     width:250px;
     padding: 10px;
 }
 
-video {
+.row img:hover {
+    opacity: .7;
+    transition: .4s;
+}
+
+.row video {
     margin-top: 8px;
     vertical-align: middle;
     padding: 10px;
@@ -86,3 +101,29 @@ table td {
     text-align: start;
     color: white;
 }
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    vertical-align: center;
+    opacity: 50%;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    opacity: 100% !important;
+    max-width: 700px;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+     }
+}
+
+

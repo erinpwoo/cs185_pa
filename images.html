@@ -9,29 +9,33 @@
   <body>
       <nav>
           <div class="navbar">
-            <a class="active" href="index.html">TEXT</a>
-            <a href="images.html">IMAGES</a>
+            <a href="index.html">TEXT</a>
+            <a class="active" href="images.html">IMAGES</a>
             <a href="videos.html">VIDEOS</a>
             <a href="table.html">TABLE</a>
             </div>
         </nav>
-    
+    <div id="modal-window" class="modal">
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+    </div>
     <h1>ERIN'S MUSIC BLOG</h1>
     <div class="content-body">
       <div class="row">
-        <img src="images/IMG_0252.jpg">
-        <img src="images/IMG_0970.jpg">
-        <img src="images/IMG_1005.jpg">
-        <img src="images/IMG_1020.jpg">
-        <img src="images/IMG_1639.jpg">
-        <img src="images/IMG_1706.JPG">
-        <img src="images/IMG_1753.JPG">
-        <img src="images/IMG_2086.JPG">
-        <img src="images/IMG_2323.JPG">
-        <img src="images/IMG_2808.jpg">
-        <img src="images/IMG_6730.jpg">
-        <img src="images/IMG_1735.JPG">
+        <img src="images/IMG_0252.jpg" onclick="openModal(this)">
+        <img src="images/IMG_0970.jpg" onclick="openModal(this)">
+        <img src="images/IMG_1005.jpg" onclick="openModal(this)">
+        <img src="images/IMG_1020.jpg" onclick="openModal(this)">
+        <img src="images/IMG_1639.jpg" onclick="openModal(this)">
+        <img src="images/IMG_1706.JPG" onclick="openModal(this)">
+        <img src="images/IMG_1753.JPG" onclick="openModal(this)">
+        <img src="images/IMG_2086.JPG" onclick="openModal(this)">
+        <img src="images/IMG_2323.JPG" onclick="openModal(this)">
+        <img src="images/IMG_2808.jpg" onclick="openModal(this)">
+        <img src="images/IMG_6730.jpg" onclick="openModal(this)">
+        <img src="images/IMG_1735.JPG" onclick="openModal(this)">
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
