@@ -4,6 +4,7 @@ var scrollToTopButton = document.getElementById("scrollToTopBtn");
 var submitMsg = document.getElementById("submitMsg");
 var root = document.documentElement;
 
+// Resource used for image/video modal: https://www.w3schools.com/howto/howto_css_modal_images.asp
 function openModal(source) {
     modal.style.visibility = "visible";
     img.src = source.src;
@@ -17,7 +18,7 @@ function openModal(source) {
         }
     });
 }
-
+// Resource used for scroll-to-top button: https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ 
 document.addEventListener("scroll", () => {
     var scroll = root.scrollHeight - root.clientHeight;
     if ((root.scrollTop / scroll) >= .25) {
@@ -28,6 +29,7 @@ document.addEventListener("scroll", () => {
     }
 });
 
+// Regex for valid email addresses: https://www.w3resource.com/javascript/form/email-validation.php
 function validateEmail(email) {
     var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     submitMsg.style.visibility = "visible";
