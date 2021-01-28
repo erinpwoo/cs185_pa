@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS 185 - PA 1</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="index.html">TEXT</a>
+                <a href="images.html">IMAGES</a>
+                <a href="videos.html">VIDEOS</a>
+                <a href="table.html">TABLE</a>
+                <a class="active" href="email.html">EMAIL</a>
+            </div>
+        </nav>
+
+        <h1>ERIN'S MUSIC BLOG</h1>
+        <div class="email-form">
+            <h3>Enter an email and click submit</h3>
+            <form name="email">
+                <input type='text' name='input'/>
+            </form>
+            <button id="submit-btn" onclick="validateEmail(document.email.input.value)">Submit</button>
+            <p id="submitMsg">Submit message.</p>
+        </div>
+        <button id="scrollToTopBtn" class="scrollToTopBtn">⬆</button>
+    </body>
+    <script src="script.js"></script>
+</html>

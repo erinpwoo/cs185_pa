@@ -7,6 +7,7 @@ h1 {
 h2,h3,h4,h5,h6 {
     font-family: "Oswald";
     color: white;
+    text-align: center;
 }
 body {
     font-family: "Open Sans";
@@ -126,6 +127,14 @@ table td {
      }
 }
 
+.email-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    align-self: center;
+}
+
 .scrollToTopBtn {
   color: white;
   background-color: black;
@@ -138,7 +147,8 @@ table td {
   z-index: 10;
   opacity: 0;
   transform: translateY(100px);
-  transition: all .5s ease
+  transition: all .5s ease;
+  outline: none;    
 }
 
 .showButton {
@@ -146,4 +156,22 @@ table td {
     transform: translateY(0);
 }
 
+#submit-btn {
+    background-color:cadetblue;
+    border-radius: 15px;
+    outline: none;    
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.email-form input {
+    font-size: 16px;
+}
+
+.email-form p {
+    color: white;
+    visibility: hidden;
+}
 
