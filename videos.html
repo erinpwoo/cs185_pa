@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   </head>
   <body>
-      <nav>
-          <div class="navbar">
-            <a class="active" href="index.html">TEXT</a>
-            <a href="images.html">IMAGES</a>
-            <a href="videos.html">VIDEOS</a>
-            <a href="table.html">TABLE</a>
-            </div>
-        </nav>
-    
+    <nav>
+      <div class="navbar">
+        <a href="index.html">TEXT</a>
+        <a href="images.html">IMAGES</a>
+        <a class="active" href="videos.html">VIDEOS</a>
+        <a href="table.html">TABLE</a>
+        <a href="email.html">EMAIL</a>
+      </div>
+    </nav>
+    <div id="modal-window" class="modal">
+      <video class="modal-content" id="modal-img" controls="controls"></video>
+      <div id="caption"></div>
+    </div>
     <h1>ERIN'S MUSIC BLOG</h1>
-    <div class="row">
-      <div class="column">
-      <video src="videos/IMG_1713.MOV" controls="controls"></video>
-      <video src="videos/IMG_2311.MOV" controls="controls"></video>
-      </div>
-      <div class="column">
-      <video src="videos/IMG_0272.MOV" controls="controls"></video>
-      <video src="videos/IMG_1039.MOV" controls="controls"></video>
-      </div>
-      <div class="column">
-      <video src="videos/IMG_0833.MOV" controls="controls"></video>
-      <video src="videos/IMG_0490.MOV" controls="controls"></video>
+    <div class="content-body">
+      <div class="row">
+          <video src="videos/IMG_1713.MOV" onclick="openModal(this)"></video>
+          <video src="videos/IMG_2311.MOV" onclick="openModal(this)"></video>
+          <video src="videos/IMG_0272.MOV" onclick="openModal(this)"></video>
+          <video src="videos/IMG_1039.MOV" onclick="openModal(this)"></video>
+          <video src="videos/IMG_0833.MOV" onclick="openModal(this)"></video>
+          <video src="videos/IMG_0490.MOV" onclick="openModal(this)"></video>
       </div>
     </div>
+    <button id="scrollToTopBtn" class="scrollToTopBtn">⬆</button>
   </body>
+  <script src="script.js"></script>
 </html>

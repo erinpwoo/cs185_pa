@@ -7,6 +7,7 @@ h1 {
 h2,h3,h4,h5,h6 {
     font-family: "Oswald";
     color: white;
+    text-align: center;
 }
 body {
     font-family: "Open Sans";
@@ -17,6 +18,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color:darkslategray;
+    max-width: 100%;
 }
 
 .navbar a {
@@ -24,6 +26,12 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: inline-block;
+    width: inherit;
+}
+
+.navbar a:hover {
+    background-color: teal;
 }
 
 .main-text {
@@ -40,24 +48,34 @@ body {
     padding: 0 4px;
     text-align: center;
 }
-  
-  /* Create two equal columns that sits next to each other */
-.column {
-    padding: 10px;
+
+.content-body {
+    vertical-align: middle;
 }
-  
-.column img {
+
+.active {
+    background-color: cadetblue;
+}
+
+.row img {
     margin-top: 8px;
     vertical-align: middle;
-    width:15%;
+    width:250px;
     padding: 10px;
 }
 
-.column video {
+.row img:hover {
+    opacity: .7;
+    transition: .4s;
+}
+
+.row video {
     margin-top: 8px;
     vertical-align: middle;
-    width:25%;
     padding: 10px;
+    width: 400px;
+    max-width: 80%;
+    flex-direction: row;
 }
 
 th, td {
@@ -69,7 +87,7 @@ th, td {
 
 table {
     border: 1px solid ivory;
-    width: fit-content;
+    width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -84,3 +102,76 @@ table td {
     text-align: start;
     color: white;
 }
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 50%;
+    margin-top: 15%;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+     }
+}
+
+.email-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    align-self: center;
+}
+
+.scrollToTopBtn {
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .5s ease;
+  outline: none;    
+}
+
+.showButton {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#submit-btn {
+    background-color:cadetblue;
+    border-radius: 15px;
+    outline: none;    
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.email-form input {
+    font-size: 16px;
+}
+
+.email-form p {
+    color: white;
+    visibility: hidden;
+}
+
