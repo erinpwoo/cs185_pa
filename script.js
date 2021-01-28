@@ -31,7 +31,7 @@ document.addEventListener("scroll", () => {
 
 // Regex for valid email addresses: https://www.w3resource.com/javascript/form/email-validation.php
 function validateEmail(email) {
-    var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     submitMsg.style.visibility = "visible";
     if (email.match(regex)) {
         submitMsg.textContent = "Email successfully recorded."
